@@ -1,0 +1,17 @@
+#  ignonre the file to push to the repo
+# like this node_modules/
+# or this .env
+# or this .gitignore
+# or this .DS_Store
+# or this .vscode/
+# or this .idea/
+
+
+
+node_modules/
+
+.env
+
+.DS_Store
+
+.vscode/
