@@ -1,44 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01_javascript</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        .image {
+            background-image: url('./Images/Background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 90%;
+        }
+    </style>
 </head>
+
 <body>
-                  
-    <div class="w-full flex justify-center items-center flex-col">
 
-                  <h2 class="text-slate-500 text-3xl ">
-                 Chapter 01 : Data Types (check type)
-                    </h2>
+    <!-- slider -->
+    <div id="slider"
+        class="fixed font-Google1 w-screen h-screen bg-black z-40 -top-full transition-all duration-700 flex flex-col justify-between p-10">
+        <div>
+        <nav class="flex w-full p-4 justify-between">
 
-             
-                    <div class="w-64 h-64 flex justify-center items-center flex-col">
+            <div>
+                <h1 class="md:text-2xl text-xl text-white">List Of Projects</h1>
+            </div>
+            <div>
+                <h1 class="md:text-2xl text-xl text-white cursor-pointer" onclick="myfun2()">Close </h1>
+            </div>
+
+        </nav>
+
+        <div class="text-white list-none md:p-10">
+            <li class="md:text-3xl sm:text-xl text-lg p-5 underline underline-offset-8 cursor-pointer hover:text-zinc-200" onmouseenter="myfun3()">Academy Website </li>
+            <li class="md:text-3xl sm:text-xl text-lg p-5 underline underline-offset-8 cursor-pointer hover:text-zinc-200" onmouseenter="myfun3()">Major Project </li>
+            <li class="md:text-3xl sm:text-xl text-lg p-5 underline underline-offset-8 cursor-pointer hover:text-zinc-200" onmouseenter="myfun3()">Facebook Clone </li>
+            <li class="md:text-3xl sm:text-xl text-lg p-5 underline underline-offset-8 cursor-pointer hover:text-zinc-200" onmouseenter="myfun3()">WhiteBoard </li>
+            <li class="md:text-3xl sm:text-xl text-lg p-5 underline underline-offset-8 cursor-pointer hover:text-zinc-200" onmouseenter="myfun3()">Typing Test  </li>
+        </div>
+       </div>
 
 
-  
+        <footer class="bg-transparent border-2 border-solid border-white rounded-lg shadow m-4 ">
+            <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                </span>
+                <ul
+                    class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
-
-                          <input type="text" class="border-2 border-solid border-gray-900 p-8 rounded-3xl m-4 flex-1" id="inputbox" placeholder="Enter you Data type">
-
-
-                          <button  id="btn1" class="bg-sky-900 text-white font-bold p-4 rounded-3xl hover:bg-sky-600 hover:border-2 hover:border-solid hover:border-gray-900 flex-1">Data Type</button>
-
-
-                           <h2 id="content"> check my type is ?</h2>
-                           <p><b class="text-red-400">Note:</b> string contain Double quotes </p>
-                           
-
-                    </div>
 
 
 
     </div>
+    <!--  main  -->
+
+    <!-- image background div  -->
+    <div class="absolute -z-20 font-Google1 w-screen h-screen bg-black image">
+
+
+
+
+
+    </div>
+    <div id="main" class="w-screen overflow-y-auto overflow-x-hidden font-Google1 h-screen flex items-center flex-col bg-white-to-transparent">
+
+
+
+
+        <nav class="flex mb-10 mt-2 w-full">
+            <ul class="flex w-full items-center justify-between">
+
+                <li class="text-white p-6">Github</li>
+                <li class="text-white p-3 cursor-pointer hover:bg-slate-700" onclick="myfun()">Projects</li>
+            </ul>
+
+        </nav>
+
+        <div class="w-full h-1/2 md:mt-28 mt-5 rounded-lg flex flex-col md:flex-row p-20 justify-center gap-5">
+
+            <div class="h-full w-1/2 flex justify-end items-center"> 
+
+                  <img class="rounded-full transition-all duration-700 hover:scale-105 w-48 h-48"  src="./Images/personalphoto.png" alt="logo">
+   
+            </div>
+
+            <div class="h-full w-1/2 flex justify-start items-center"> 
+                    
+                   <div>
+                    <h1 class="sm:text-4xl text-2xl text-white underline underline-offset-8"> Shadab Ali </h1>
+                    <p class="text-black">Software Engg.</p>
+                    <!-- <p class="text-black text-sm">LeetCode Profile</p> -->
+                   </div>
+                    
+
+            </div>
+
 
              
+      
+      
+
+
+    </div>
+
+    <div class="">
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing /p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+    <p> checking on height increasing </p>
+        <footer class="bg-transparent border-2 border-solid border-white rounded-lg shadow m-4 ">
+            <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                </span>
+                <ul
+                    class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+
     <script src="server.js"></script>
-    
+    <script>
+        const classvalue = document.getElementById("main");
+        const slider = document.getElementById("slider");
+
+
+
+        function myfun() {
+
+            slider.classList.toggle("-top-full");
+            slider.classList.toggle("top-0");
+            classvalue.classList.remove("font-serif")
+            classvalue.classList.add("font-Roboto");
+
+
+        }
+        function myfun2() {
+            slider.classList.toggle('top-0');
+            slider.classList.toggle('-top-full');
+        }
+        function myfun3(event){
+             
+        }
+    </script>
+
 </body>
+
 </html>
